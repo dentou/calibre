@@ -35,8 +35,8 @@ class Unihandecoder:
             from calibre.ebooks.unihandecode.vndecoder import Vndecoder
             self.decoder = Vndecoder()
         else:  # zh and others
-            from calibre.ebooks.unihandecode.unidecoder import Unidecoder
-            self.decoder = Unidecoder()
+            from calibre.ebooks.unihandecode.jadecoder import Jadecoder
+            self.decoder = Jadecoder()
 
     def decode(self, text):
         if isinstance(text, bytes):
